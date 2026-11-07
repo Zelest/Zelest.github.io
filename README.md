@@ -75,7 +75,7 @@ La [politique de confidentialité](https://zelest.github.io/privacy.html) détai
 | `google*.html` | Vérification Google Search Console |
 | `README.md` | Présentation et fonctionnement du projet |
 
-Le dépôt GitHub est public uniquement pour héberger le site de présentation. Il ne doit contenir aucune donnée sensible de l'infrastructure privée.
+Le dépôt GitHub est public uniquement pour héberger le site de présentation. Il ne contient aucune donnée sensible de l'infrastructure privée.
 
 ## Technologies
 
