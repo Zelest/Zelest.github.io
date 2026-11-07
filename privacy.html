@@ -1,37 +1,66 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Confidentialité - Blackwall Lab Backup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#101115">
+  <meta name="description" content="Politique de confidentialite de l'application personnelle Blackwall Lab Backup.">
+  <title>Politique de confidentialit&eacute; | Blackwall Lab Backup</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Politique de confidentialité</h1>
-  <p>
-    Blackwall Lab Backup est une application personnelle
-    destinée à sauvegarder des données chiffrées
-    sur le compte Google Drive de son propriétaire.
-  </p>
-  <p>
-    L'application utilise l'autorisation Google Drive
-    drive.file pour créer, consulter, modifier et
-    supprimer les fichiers qu'elle gère.
-  </p>
-  <p>
-    Les sauvegardes sont chiffrées localement avec Restic
-    avant leur transfert vers Google Drive.
-    Les jetons OAuth sont conservés localement.
-  </p>
-  <p>
-    Les données ne sont ni vendues ni partagées
-    avec d'autres utilisateurs. Google Drive
-    assure leur hébergement.
-  </p>
-  <p>
-    Le propriétaire peut supprimer les sauvegardes
-    dans Google Drive et révoquer l'autorisation
-    dans les paramètres de son compte Google.
-  </p>
-  <a href="index.html">Accueil</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./" aria-label="Blackwall Lab Backup, accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.4 2.8c1.6 7.3-3.4 7.9-2.4 13.1-2.2-1.7-3-4.2-2.6-6.8C9.3 13.1 6.4 18 7.3 23c.8 4.5 4.2 7.2 8.8 7.2 5.2 0 8.8-3.5 8.8-8.2 0-4.4-2.7-7.4-3-9.8-2 2.9-3.9 5.1-6.1 6.2 1.6-5.7 3.9-9-1.4-14.4Z" fill="#8A79C4"/>
+            <path d="M19.4 5.1c-1.3 5.7-3.9 7.6-3.4 12.6-1.6-1.3-2.6-3.1-2.7-4.8-2.3 3.2-3.5 6.3-2.9 9.4.4 2.5 1.5 4.5 3.7 5.8-1.9-4.3 1.4-7.2 4.4-9.6-.6 5 2.9 5.7 2.2 9.9 3.8-1.3 5.8-4.9 5.2-9.1-.3-2.8-2.6-5.6-4.4-7.4.4 3.1-.4 4.2-2.3 5.8 1.5-5 1.8-8.8 1.8-12.6Z" fill="#E9B39C"/>
+          </svg>
+        </span>
+        <span>Blackwall Lab Backup</span>
+      </a>
+      <span class="header-note">Sauvegarde personnelle</span>
+    </div>
+  </header>
+
+  <main class="policy-shell">
+    <article class="policy-card">
+      <p class="eyebrow">Confidentialit&eacute; et donn&eacute;es</p>
+      <h1>Politique de confidentialit&eacute;</h1>
+      <p class="policy-intro">Cette page d&eacute;crit l'utilisation des donn&eacute;es et des autorisations Google par Blackwall Lab Backup, un outil priv&eacute; de sauvegarde chiffr&eacute;e.</p>
+
+      <section>
+        <h2>1. Finalit&eacute; de l'application</h2>
+        <p>Blackwall Lab Backup est con&ccedil;u pour sauvegarder des donn&eacute;es personnelles chiffr&eacute;es localement avec Restic, puis les transf&eacute;rer vers le Google Drive du propri&eacute;taire via Rclone. L'outil est destin&eacute; &agrave; un usage personnel et n'offre pas d'inscription publique.</p>
+      </section>
+      <section>
+        <h2>2. Acc&egrave;s &agrave; Google Drive</h2>
+        <p>L'application demande l'autorisation Google Drive <code>drive.file</code>. Cette autorisation permet de cr&eacute;er, consulter, modifier et supprimer les fichiers Google Drive cr&eacute;&eacute;s par l'application ou ceux que l'utilisateur choisit de lui ouvrir. Elle ne demande pas l'acc&egrave;s g&eacute;n&eacute;ral &agrave; l'ensemble des fichiers du compte.</p>
+      </section>
+      <section>
+        <h2>3. Chiffrement et stockage</h2>
+        <p>Les archives de sauvegarde sont destin&eacute;es &agrave; &ecirc;tre chiffr&eacute;es localement par Restic avant d'&ecirc;tre transmises &agrave; Google Drive. Les jetons d'autorisation OAuth de Rclone sont conserv&eacute;s dans la configuration locale du syst&egrave;me qui ex&eacute;cute les sauvegardes. Le fonctionnement de Google Drive demeure soumis aux conditions de Google.</p>
+      </section>
+      <section>
+        <h2>4. Partage et utilisation des donn&eacute;es</h2>
+        <p>L'application ne vend pas les donn&eacute;es et n'en partage pas avec d'autres utilisateurs. Les archives chiffr&eacute;es sont envoy&eacute;es au compte Google Drive choisi par leur propri&eacute;taire. Aucune analytique publicitaire ni aucun traceur tiers n'est int&eacute;gr&eacute; &agrave; ce site de pr&eacute;sentation.</p>
+      </section>
+      <section>
+        <h2>5. Conservation, suppression et r&eacute;vocation</h2>
+        <p>Le propri&eacute;taire choisit la dur&eacute;e de conservation des archives et peut les supprimer dans Google Drive. Il peut &eacute;galement r&eacute;voquer l'acc&egrave;s Google de l'application depuis les param&egrave;tres de s&eacute;curit&eacute; de son compte Google. La r&eacute;vocation emp&ecirc;chera les prochains transferts autoris&eacute;s.</p>
+      </section>
+      <section>
+        <h2>6. Contact</h2>
+        <p>Pour toute question relative &agrave; cette application personnelle, le propri&eacute;taire peut &ecirc;tre contact&eacute; via son <a href="https://github.com/Zelest" rel="noopener noreferrer">profil GitHub</a>.</p>
+      </section>
+      <section>
+        <p><a class="back-link" href="./">&larr; Retour &agrave; l'accueil</a></p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer"><span>Blackwall Lab</span></footer>
 </body>
 </html>
