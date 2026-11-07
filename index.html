@@ -1,21 +1,78 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#101115">
+  <meta name="description" content="Blackwall Lab Backup : application personnelle de sauvegarde chiffree avec Restic, Rclone et Google Drive.">
   <title>Blackwall Lab Backup</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Blackwall Lab Backup</h1>
-  <p>
-    Application personnelle de sauvegarde chiffrée.
-    Elle utilise Rclone pour transférer vers Google Drive
-    des sauvegardes chiffrées avec Restic.
-  </p>
-  <p>
-    Application réservée à un usage personnel,
-    sans inscription publique.
-  </p>
-  <a href="privacy.html">Politique de confidentialité</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./" aria-label="Blackwall Lab Backup, accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.4 2.8c1.6 7.3-3.4 7.9-2.4 13.1-2.2-1.7-3-4.2-2.6-6.8C9.3 13.1 6.4 18 7.3 23c.8 4.5 4.2 7.2 8.8 7.2 5.2 0 8.8-3.5 8.8-8.2 0-4.4-2.7-7.4-3-9.8-2 2.9-3.9 5.1-6.1 6.2 1.6-5.7 3.9-9-1.4-14.4Z" fill="#8A79C4"/>
+            <path d="M19.4 5.1c-1.3 5.7-3.9 7.6-3.4 12.6-1.6-1.3-2.6-3.1-2.7-4.8-2.3 3.2-3.5 6.3-2.9 9.4.4 2.5 1.5 4.5 3.7 5.8-1.9-4.3 1.4-7.2 4.4-9.6-.6 5 2.9 5.7 2.2 9.9 3.8-1.3 5.8-4.9 5.2-9.1-.3-2.8-2.6-5.6-4.4-7.4.4 3.1-.4 4.2-2.3 5.8 1.5-5 1.8-8.8 1.8-12.6Z" fill="#E9B39C"/>
+          </svg>
+        </span>
+        <span>Blackwall Lab Backup</span>
+      </a>
+      <span class="header-note">Sauvegarde personnelle</span>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero" aria-labelledby="main-title">
+      <div class="hero-icon" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.4 2.8c1.6 7.3-3.4 7.9-2.4 13.1-2.2-1.7-3-4.2-2.6-6.8C9.3 13.1 6.4 18 7.3 23c.8 4.5 4.2 7.2 8.8 7.2 5.2 0 8.8-3.5 8.8-8.2 0-4.4-2.7-7.4-3-9.8-2 2.9-3.9 5.1-6.1 6.2 1.6-5.7 3.9-9-1.4-14.4Z" fill="#8A79C4"/>
+          <path d="M19.4 5.1c-1.3 5.7-3.9 7.6-3.4 12.6-1.6-1.3-2.6-3.1-2.7-4.8-2.3 3.2-3.5 6.3-2.9 9.4.4 2.5 1.5 4.5 3.7 5.8-1.9-4.3 1.4-7.2 4.4-9.6-.6 5 2.9 5.7 2.2 9.9 3.8-1.3 5.8-4.9 5.2-9.1-.3-2.8-2.6-5.6-4.4-7.4.4 3.1-.4 4.2-2.3 5.8 1.5-5 1.8-8.8 1.8-12.6Z" fill="#E9B39C"/>
+        </svg>
+      </div>
+      <h1 id="main-title">Blackwall Lab Backup</h1>
+      <p class="lead">Application personnelle de sauvegarde chiffr&eacute;e.</p>
+      <p class="description">
+        <span class="sentence">Une solution con&ccedil;ue pour chiffrer localement des sauvegardes avec Restic</span>
+        <span class="sentence">et les transf&eacute;rer vers Google Drive via Rclone.</span>
+        <span class="sentence">Utilisation strictement personnelle, sans inscription publique.</span>
+      </p>
+      <div class="hero-actions">
+        <a class="primary-link" href="privacy.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+          Politique de confidentialit&eacute;
+        </a>
+      </div>
+    </section>
+
+    <section class="features" aria-label="Principes de l'application">
+      <article class="feature">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.4" r="1"/><path d="M12 16.4v2"/></svg>
+        </div>
+        <h2>Chiffrement local</h2>
+        <p>Les sauvegardes sont con&ccedil;ues pour &ecirc;tre chiffr&eacute;es avant tout transfert.</p>
+      </article>
+      <article class="feature">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3-6 10 4 7 6-10-4-7Z"/><path d="M8 3h7l7 10h-7L8 3Z"/><path d="M6 20h12l4-7H10l-4 7Z"/></svg>
+        </div>
+        <h2>Sauvegarde Google Drive</h2>
+        <p>Transfert s&eacute;curis&eacute; des archives chiffr&eacute;es vers Google Drive via Rclone.</p>
+      </article>
+      <article class="feature">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg>
+        </div>
+        <h2>Usage personnel</h2>
+        <p>Application destin&eacute;e &agrave; un usage priv&eacute;, sans compte public ni inscription ouverte.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>Blackwall Lab</span></footer>
 </body>
 </html>
