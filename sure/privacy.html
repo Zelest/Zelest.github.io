@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#101115">
+  <meta name="description" content="Politique de confidentialité de Blackwall Lab - Sure.">
+  <title>Confidentialité | Blackwall Lab - Sure</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../">
+        <span class="brand-mark" aria-hidden="true">BW</span>
+        <span>Blackwall Lab</span>
+      </a>
+      <span class="header-note">Sure · Finances personnelles</span>
+    </div>
+  </header>
+
+  <main class="policy-shell">
+    <article class="policy-card">
+      <p class="eyebrow">Blackwall Lab / Sure</p>
+      <h1>Politique de confidentialité</h1>
+      <p class="policy-intro">
+        Cette politique décrit le traitement des données financières
+        dans l'instance privée et auto-hébergée de Sure exploitée
+        dans le cadre du projet personnel Blackwall Lab.
+      </p>
+
+      <section>
+        <h2>1. Présentation du service</h2>
+        <p>
+          Blackwall Lab - Sure est une application personnelle
+          et non commerciale de gestion financière, reposant sur
+          le logiciel open source Sure.
+        </p>
+        <p>
+          Le service est hébergé sur une infrastructure privée
+          administrée par le propriétaire de Blackwall Lab.
+          L'inscription publique est désactivée et l'accès
+          est réservé aux utilisateurs autorisés.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Données traitées</h2>
+        <p>
+          Selon les fonctionnalités utilisées et les connexions
+          autorisées, le service peut traiter :
+        </p>
+        <ul>
+          <li>Les informations nécessaires aux comptes utilisateurs.</li>
+          <li>Les comptes bancaires et leurs soldes.</li>
+          <li>Les transactions, montants, dates et libellés.</li>
+          <li>Les investissements, positions et valorisations.</li>
+          <li>Les catégories, budgets et données financières saisies.</li>
+          <li>Les données techniques nécessaires à la sécurité et
+              au fonctionnement des synchronisations.</li>
+        </ul>
+        <p>
+          Ces données sont utilisées pour présenter et analyser
+          les finances personnelles des utilisateurs autorisés.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. Connexion bancaire via Enable Banking</h2>
+        <p>
+          L'application utilise Enable Banking pour accéder,
+          avec le consentement du titulaire, aux informations
+          des comptes bancaires compatibles.
+        </p>
+        <p>
+          L'accès bancaire configuré est destiné à la consultation
+          des soldes et transactions. Il ne permet pas à
+          Blackwall Lab - Sure d'effectuer des virements
+          ou de déplacer des fonds.
+        </p>
+        <p>
+          L'utilisateur autorise l'accès auprès de son établissement
+          bancaire dans le cadre du processus Enable Banking.
+          Il peut consulter et révoquer ses consentements depuis
+          <a href="https://enablebanking.com/data-sharing-consents/">
+            le portail de gestion des consentements Enable Banking
+          </a>.
+        </p>
+        <p>
+          La révocation empêche les futurs accès autorisés,
+          mais ne supprime pas automatiquement les informations
+          déjà importées dans Sure.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. Hébergement et sécurité</h2>
+        <p>
+          Les données de l'application sont stockées sur
+          l'infrastructure privée Blackwall Lab, notamment
+          dans une base PostgreSQL.
+        </p>
+        <p>
+          L'accès à l'application est restreint au réseau privé
+          autorisé, avec connexion HTTPS et authentification.
+          L'administrateur de l'infrastructure conserve
+          techniquement la possibilité d'accéder aux données
+          hébergées afin de gérer et maintenir le service.
+        </p>
+        <p>
+          Des sauvegardes sont réalisées localement.
+          Des copies chiffrées par Restic sont également
+          conservées sur un espace Google Drive personnel.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Services tiers</h2>
+        <p>
+          Certains services externes sont utilisés pour des
+          fonctions précises :
+        </p>
+        <ul>
+          <li>Enable Banking : accès bancaire autorisé.</li>
+          <li>Les banques connectées : fourniture des données bancaires.</li>
+          <li>Yahoo Finance : récupération des données de marché.</li>
+          <li>Google Drive : conservation de sauvegardes chiffrées.</li>
+          <li>GitHub Pages : publication de cette documentation.</li>
+        </ul>
+        <p>
+          Le site public GitHub Pages ne contient aucune donnée
+          bancaire ni aucun identifiant de connexion des utilisateurs
+          de Sure.
+        </p>
+        <p>
+          L'assistant d'intelligence artificielle externe n'est
+          pas activé dans la configuration actuelle de Sure.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Conservation et suppression</h2>
+        <p>
+          Les informations sont conservées pour permettre
+          l'utilisation et le suivi historique des finances
+          personnelles, jusqu'à leur suppression ou celle
+          du compte concerné.
+        </p>
+        <p>
+          Des données supprimées peuvent subsister temporairement
+          dans des sauvegardes historiques, selon les politiques
+          de conservation locales et distantes.
+        </p>
+        <p>
+          La suppression d'une connexion bancaire n'entraîne
+          pas nécessairement la suppression automatique
+          de toutes les transactions précédemment importées.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Contrôle des données et contact</h2>
+        <p>
+          Les utilisateurs autorisés peuvent demander
+          l'accès, la rectification ou la suppression
+          de leurs données à l'administrateur du service.
+        </p>
+        <p>
+          Pour toute question concernant les données personnelles,
+          utiliser l'adresse de contact indiquée dans
+          l'application Enable Banking ou contacter
+          <a href="https://github.com/Zelest">
+            le responsable de Blackwall Lab via GitHub
+          </a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Mise à jour</h2>
+        <p>
+          Cette politique peut évoluer en fonction des
+          fonctionnalités et des services connectés.
+        </p>
+        <p>Dernière mise à jour : 8 novembre 2026.</p>
+      </section>
+
+      <section>
+        <p>
+          <a href="terms.html">Conditions d'utilisation</a>
+          ·
+          <a class="back-link" href="../">Retour à l'accueil</a>
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">Blackwall Lab · Usage personnel</footer>
+</body>
+</html>
