@@ -177,3 +177,104 @@ h1 { margin-bottom: 7px; font-size: clamp(32px, 4vw, 48px); font-weight: 710; li
   html { scroll-behavior: auto; }
   .primary-link { transition: none; }
 }
+
+/* ==========================================
+   BLACKWALL LAB - SURE SERVICE
+   ========================================== */
+
+.related-service {
+  margin-top: 36px;
+  padding: 36px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: linear-gradient(155deg, #1d1e25, #17181e);
+}
+
+.related-service-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.related-service-icon {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  background: linear-gradient(140deg, #233b29, #17241b);
+  border: 1px solid #42664a;
+  color: #82db91;
+  font-size: 31px;
+  font-weight: 800;
+}
+
+.related-service h2 {
+  margin-bottom: 4px;
+  font-size: 24px;
+  letter-spacing: -.035em;
+}
+
+.service-status {
+  color: #8fd19b;
+  font-size: 13px;
+}
+
+.related-service > p:not(.eyebrow) {
+  max-width: 820px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.related-service-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.related-service-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  background: var(--surface-alt);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: border-color .2s, transform .2s;
+}
+
+.related-service-links a:hover {
+  border-color: var(--accent-soft);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 540px) {
+  .related-service {
+    padding: 24px 20px;
+  }
+
+  .related-service-header {
+    align-items: flex-start;
+  }
+
+  .related-service h2 {
+    font-size: 20px;
+  }
+
+  .related-service-links {
+    flex-direction: column;
+  }
+
+  .related-service-links a {
+    width: 100%;
+  }
+}
